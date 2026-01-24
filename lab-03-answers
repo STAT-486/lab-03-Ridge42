@@ -1,52 +1,52 @@
 ANSWERS
 
 (2)
-(c) Training MSE: XXXX
-(d) Test MSE: XXXX 
-(e) Your answer: XXXX
+(c) Training MSE: 1.5350956362420871
+(d) Test MSE: 1.7543308610948378 
+(e) Your answer: 13.061956352597662 It shows that our model is predicting really well as the test MSE is much better than the variance of ytest.
 
 
 (3)
 (b) 
-Feature 1: XXXX (coef: XXXX)
-Feature 2: XXXX (coef: XXXX)
-Feature 3: XXXX (coef: XXXX)
+Feature 1: Salnty Depthm (coef: 147.569766)
+Feature 2: Salnty Dry_T (coef: 35.153778)
+Feature 3: Salnty O2ml_L (coef: 32.217666)
 
 (c) 
-Feature 1: XXXX (coef: XXXX)
-Feature 2: XXXX (coef: XXXX)
-Feature 3: XXXX (coef: XXXX)
+Feature 1: Depthm (coef: -146.550613)
+Feature 2: O2ml_L (coef: -37.244657)
+Feature 3: Dry_T (coef: -34.383804)
 
-(d) y-intercept: XXXX 
+(d) y-intercept: 11.607865265528682 
 
 (4) 
 (c1) Best hyperparameters: 
-* strategy: XXXX
-* poly degree: XXXX
-* n neighbors: XXXX
-* weight: XXXX
-(c2) Best MSE: XXXX
-(d) Time: XXXX
-(f) test MSE: XXXX 
-(g) Your answer: XXXX
+* strategy: Median
+* poly degree: 3
+* n neighbors: 10
+* weight: distance
+(c2) Best MSE: 1.1942865460094287
+(d) Time: 2m 42.5s
+(f) test MSE: 1.2398437245052845 
+(g) Your answer: Yes, the MSE is better showing that this optimized pipeline for KNN predicts new data better.
 
 (5) - (Repeat of (4) with RandomizedGridSearch)
 (c1) Best hyperparameters: 
-* strategy: XXXX
-* poly degree: XXXX
-* n neighbors: XXXX
-* weight: XXXX
-(c2) Best MSE: XXXX
-(d) Time: XXXX
-(f) test MSE: XXXX 
-(g) Your answer: XXXX
-(h) Your answer: XXXX
+* strategy: median
+* poly degree: 3
+* n neighbors: 10
+* weight: distance
+(c2) Best MSE: 1.1942865460094287
+(d) Time: 6.6s
+(f) test MSE: 1.2398437245052845 
+(g) Your answer: Yes, the MSE is better showing that this optimized pipeline for KNN predicts new data better.
+(h) Your answer: Both methods ended up giving me the same optimzied Pipeline and thus the same test MSE. The RandomziedGridSearch was better because it only took less than 7 seconds to run while Grid took almost 3 minutes.
 
 (6) 
-(b1) Training MSE: XXXX
-(b2) Test MSE: XXXX 
-(c) Your answer: XXXX
+(b1) Training MSE: 6.578236215726725e-13
+(b2) Test MSE: 1.5841011710818067 
+(c) Your answer: No, because the MSE is higher than it was without the categorical variables and just made making the Pipeline more complicated.
 
 (7) 
-(b) Your answer: XXXX
+(b) Your answer: I learned about the memory parameter which can be used to cache a transformer after calling fit. This will make the GridSearchCV faster which is pretty convenient.
 
